@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.stickers {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    
+    
+}
+
+
+.stickers img {
+    display: flex;
+    height: 20rem;
+    width: auto;
+    padding: 2rem;
+}
