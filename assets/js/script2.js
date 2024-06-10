@@ -10,9 +10,10 @@ function verificar () {
     var cantidadIngresada= sticker1 + sticker2 + sticker3;
     var mensaje=document.getElementById("mensaje");
 
-    if (cantidadIngresada <= 10) {
+    if (cantidadIngresada >=1 && cantidadIngresada <= 10) {
         mensaje.innerHTML="llevas " + cantidadIngresada + " stickers";
-
+    }else if (cantidadIngresada <=0){
+        mensaje.innerHTML="no llevas suficientes stickers";
     }else {
         mensaje.innerHTML="llevas demasiados stickers";
     }
