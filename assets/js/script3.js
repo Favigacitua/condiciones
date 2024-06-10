@@ -1,21 +1,22 @@
-function verificar () {
-    var stickerUno= document.getElementById('sticker1').value;
-    var stickerDos= document.getElementById('sticker2').value;
-    var stickerTres= document.getElementById('sticker3').value;
+function verificarContraseña() {
+    var digito1 = document.getElementById("select1").value;
+    var digito2 = document.getElementById("select2").value;
+    var digito3 = document.getElementById("select3").value;
 
-    var sticker1= Number(stickerUno)
-    var sticker2= Number(stickerDos)
-    var sticker3= Number(stickerTres)
 
-    var cantidadIngresada= sticker1 + sticker2 + sticker3;
-    var mensaje=document.getElementById("mensaje");
 
-    if (cantidadIngresada <= 10) {
-        mensaje.innerHTML="llevas " + cantidadIngresada + " stickers";
+var passwordCorrecto = "911";
+var passwordCorrecto2= "714";
 
-    }else {
-        mensaje.innerHTML="llevas demasiados stickers";
-    }
+var passwordIngresado= digito1 + digito2 + digito3;
+var passwordIngresado2= digito1 + digito2 + digito3;
 
+if (passwordCorrecto === passwordIngresado) {
+    alert("password 1 correcto")
+} else if (passwordCorrecto2 === passwordIngresado2) {
+    alert("password 2 correcto")
+} else {
+    alert("password incorrecto")
+}
 
 }
